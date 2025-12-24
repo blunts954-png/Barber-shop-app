@@ -3,14 +3,13 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "migrate:up": "node-pg-migrate up",
-    "migrate:down": "node-pg-migrate down",
-    "migrate:create": "node-pg-migrate create"
+    "migrate": "node migrate.js",
+    "seed": "node seed.js",
+    "reset": "node migrate.js && node seed.js"
   },
   "dependencies": {
-    "pg": "^8.11.3"
-  },
-  "devDependencies": {
-    "node-pg-migrate": "^7.0.2"
+    "pg": "^8.11.3",
+    "bcrypt": "^5.1.1",
+    "uuid": "^9.0.1"
   }
 }
