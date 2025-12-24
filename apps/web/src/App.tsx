@@ -10,7 +10,8 @@ import { Login } from './pages/Login';
 
 function App() {
   // TODO: Implement auth check
-  const isAuthenticated = false;
+  // TEMPORARY: Bypassing login to preview dashboard
+  const isAuthenticated = true;
 
   if (!isAuthenticated) {
     return <Login />;
