@@ -5,7 +5,7 @@ const { v4: uuidv4 } = require('uuid');
 async function seedData() {
   const client = new Client({
     host: 'localhost',
-    port: 5432,
+    port: 5433,
     database: 'barbershop_dev',
     user: 'postgres',
     password: 'postgres',
